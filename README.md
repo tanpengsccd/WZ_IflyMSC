@@ -1,4 +1,4 @@
-# WZIflyMSC
+# WZ_IflyMSC
 https://www.xfyun.cn/sdk/dispatcher
 只有声纹识别
 日志：
@@ -18,7 +18,7 @@ DKIflyMSC is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'WZIflyMSC'
+pod 'WZ_IflyMSC'
 ```
 
 ## Author

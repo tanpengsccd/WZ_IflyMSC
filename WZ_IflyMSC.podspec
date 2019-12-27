@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  s.name         = "WZIflyMSC"
+  s.name         = "WZ_IflyMSC"
   s.version      = "1180"
   s.summary      = "讯飞语音"
   s.description  = <<-DESC
@@ -12,12 +12,14 @@ Pod::Spec.new do |s|
   s.author           = { 'tanpengsccd' => 'tanpengcd@gmail.com' }
   s.platform     = :ios, "9.0"
 
-  s.source       = { :git => "https://github.com/tanpengsccd/WZIflyMSC.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/tanpengsccd/WZ_IflyMSC.git", :tag => "#{s.version}" }
 
   s.vendored_frameworks = 'Source/iflyMSC.framework'
 
-  s.xcconfig            = { "LIBRARY_SEARCH_PATHS" => "\"$(PODS_ROOT)/iflyMSCKit/**\"" }
-
+  # s.xcconfig            = { "LIBRARY_SEARCH_PATHS" => "\"$(PODS_ROOT)/iflyMSCKit/**\"" }
+  s.xcconfig = {
+     'ENABLE_BITCODE' => 'NO'
+  }
   s.frameworks = 'AVFoundation','SystemConfiguration','Foundation','CoreTelephony','AudioToolbox','UIKit','CoreLocation','Contacts','AddressBook','QuartzCore','CoreGraphics'
   s.libraries = 'z','c++','icucore'
 
